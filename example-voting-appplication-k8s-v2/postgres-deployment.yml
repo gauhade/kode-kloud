@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+type: Deployment
+metadata:
+  name: postgres-deployment
+  labels:
+    app: demo-voting-app
+spec:
+  template:
+    metadata:
+      name: postgres-deployment
+      labels:
+        app: demo-voting-app
+        name: postgres-deployment
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:9.4
+  replicas: 1
+  selectors:
+    matchLables:
+      app: demo-voting-app
+      name: postgres-deployment
