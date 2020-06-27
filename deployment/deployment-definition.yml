@@ -16,6 +16,6 @@ spec:
         - name: nginx-container
           image: nginx
   replicas: 3
-  selectors:
+  selector:
     matchLables:
       app: my-app

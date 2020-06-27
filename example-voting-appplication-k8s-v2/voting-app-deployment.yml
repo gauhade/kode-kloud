@@ -16,7 +16,7 @@ spec:
         - name: voting-app
           image: dockersamples/examplevotingapp_vote
   replicas: 1
-  selectors:
+  selector:
     matchLables:
       app: demo-voting-app
       name: voting-app-deployment

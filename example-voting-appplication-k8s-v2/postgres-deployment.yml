@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-type: Deployment
+kind: Deployment
 metadata:
   name: postgres-deployment
   labels:
@@ -16,7 +16,7 @@ spec:
         - name: postgres
           image: postgres:9.4
   replicas: 1
-  selectors:
+  selector:
     matchLables:
       app: demo-voting-app
       name: postgres-deployment

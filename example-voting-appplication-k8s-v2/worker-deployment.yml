@@ -16,7 +16,7 @@ spec:
         - name: worker-app
           image: dockersamples/examplevotingapp_worker
   replicas: 1
-  selectors:
+  selector:
     matchLables:
       app: demo-voting-app
       name: worker-app-deployment

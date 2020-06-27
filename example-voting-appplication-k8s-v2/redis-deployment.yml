@@ -16,7 +16,7 @@ spec:
         - name: redis
           image: redis
   replicas: 1
-  selectors:
+  selector:
     matchLables:
       app: demo-voting-app
       name: redis-deployment
