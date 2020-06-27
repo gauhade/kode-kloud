@@ -17,6 +17,6 @@ spec:
           image: postgres:9.4
   replicas: 1
   selector:
-    matchLables:
+    matchLabels:
       app: demo-voting-app
       name: postgres-deployment

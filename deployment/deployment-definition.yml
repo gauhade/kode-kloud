@@ -17,5 +17,5 @@ spec:
           image: nginx
   replicas: 3
   selector:
-    matchLables:
+    matchLabels:
       app: my-app
